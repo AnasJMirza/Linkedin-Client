@@ -2,7 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 import logo from "../assets/images/linkedin.svg";
+import home from '../assets/images/Home.svg';
+import user from '../assets/images/3 User.svg';
+import work from '../assets/images/Work.svg';
+import notification from '../assets/images/Notification.svg';
+import chat from '../assets/images/Chat.svg';
+import profile from '../assets/images/Profile.svg';
+
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+
 
 const Navbar = () => {
   return (
@@ -10,7 +18,14 @@ const Navbar = () => {
       <Logo>
         <img src={logo} />
       </Logo>
-      <Icons>Icons</Icons>
+      <Icons>
+        <Icon src={home} />
+        <Icon src={user} />
+        <Icon src={work} />
+        <Icon src={notification} />
+        <Icon src={chat} />
+        <Icon src={profile} />
+      </Icons>
       <SearchBar>
         <Search>
           <Input type={"text"} placeholder="Search Something..." />
@@ -37,7 +52,11 @@ const Container = styled.div`
 const Logo = styled.div`
     
 `;
-const Icons = styled.div``;
+const Icons = styled.div`
+    display: flex;
+    gap: 40px;
+    
+`;
 
 const SearchBar = styled.div`
   display: flex;
@@ -66,4 +85,8 @@ const Input = styled.input`
   outline: none;
   border: none;
   background-color: #f6f6f6;
+`;
+
+const Icon = styled.img`
+    cursor: pointer;
 `;
