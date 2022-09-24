@@ -28,7 +28,7 @@ const Navbar = () => {
       </Icons>
       <SearchBar>
         <Search>
-          <Input type={"text"} placeholder="Search Something..." />
+          <Input type={"text"} placeholder="Search for any thing" />
         </Search>
         <SearchIcon>
             <SearchOutlinedIcon />
@@ -46,7 +46,7 @@ const Container = styled.div`
   align-items: center;
   padding: 10px 60px;
   height: 70px;
-  border: 1px solid black;
+  
 `;
 
 const Logo = styled.div`
@@ -62,11 +62,11 @@ const SearchBar = styled.div`
   display: flex;
 `;
 const Search = styled.div`
-  height: 35px;
+  height: 42px;
   width: 210px;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 15px;
   background: #f6f6f6;
   border-radius: 18px 0px 0px 18px;
 `;
