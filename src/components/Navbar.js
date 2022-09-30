@@ -46,6 +46,7 @@ const Container = styled.div`
   align-items: center;
   padding: 10px 60px;
   height: 70px;
+  background: #FCFDFD;
   
 `;
 
