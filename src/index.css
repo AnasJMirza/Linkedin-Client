@@ -8,3 +8,9 @@
 body{
     background-color: rgb(246, 246, 246);
 }
+
+::selection {
+    color: rgb(250, 250, 250);
+    background: rgb(233, 112, 32);
+
+}
