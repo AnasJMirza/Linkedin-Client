@@ -9,6 +9,7 @@ const Feed = () => {
             <FeedSection>Feed</FeedSection>
             <RightSection>
                 <Right/>
+                
             </RightSection>
         </Container>
     );

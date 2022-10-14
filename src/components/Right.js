@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tryPremium from "../assets/images/tryPremium.png";
+import PagesInfo from "./PagesInfo";
 import UserSuggestion from "./UserSuggestion";
 
 const Right = () => {
@@ -15,6 +16,9 @@ const Right = () => {
         <UserSuggestion />
         <UserSuggestion />
       </ConnectsSuggestions>
+      <Pages>
+        <PagesInfo />
+      </Pages>
     </Container>
   );
 };
@@ -45,4 +49,11 @@ const Heading = styled.div`
   color: #212121;
   padding: 0px 20px;
   padding-top: 20px;
+`;
+
+const Pages = styled.div`
+  background-color: #FCFDFD;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
 `;
